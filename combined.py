@@ -133,7 +133,7 @@ def main():
 	print('')
 
 	raspAdd = getRaspIP() #Get RaspBerry PI IP Address
-	pwd = 'kahaan16' #Set Password
+	pwd = '<password>' #Set Password
 	
 	#Quit if no Raspberry Pis found
 	if raspAdd == 'NOT FOUND':
