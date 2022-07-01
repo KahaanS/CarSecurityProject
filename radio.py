@@ -37,7 +37,7 @@ def getSession(client):
 def progress(filename, size, sent):
     sys.stdout.write("%s\'s progress: %.2f%%   \r" % (filename.decode('ascii'), float(sent)/float(size)*100))
 
-ssh = createSSHClient('192.168.29.120', 22, 'root', 'kahaan16') #Create SSH Connection
+ssh = createSSHClient('<Pi IP Address>', 22, 'root', '<password>') #Create SSH Connection
 scp = SCPClient(ssh.get_transport(), progress=progress) #Use connection to create SCPClient
 session = getSession(ssh) #Create shell session
 
